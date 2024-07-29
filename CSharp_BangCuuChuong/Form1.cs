@@ -46,7 +46,18 @@ namespace CSharp_BangCuuChuong
             }
         }
 
-        
+        private void ShowKQ3(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            labKQ.Text = "Kết quả:";
+            TextBox t = (TextBox)sender;
+            int so = Convert.ToInt32(t.Text);
+            for (int i = 1; i <= 10; i++)
+            {
+                labKQ.Text += $"\n{so} x {i} = {so * i}";
+                listBox1.Items.Add($"\n{so} x {i} = {so * i}");
+            }
+        }
         private void butKQ_Click(object sender, EventArgs e)
         {
             HienThiKQ();

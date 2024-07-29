@@ -77,6 +77,7 @@
             txtBCC.Name = "txtBCC";
             txtBCC.Size = new Size(97, 43);
             txtBCC.TabIndex = 3;
+            txtBCC.TextChanged += ShowKQ3;
             // 
             // numBCC
             // 
